@@ -170,7 +170,7 @@ export class GeoLayer {
       const tags = verify(info, 'building')
 
       // Only render when geometry is Polygon
-      if (tags && fel.geometry.type === 'Polygon') {
+      if (fel.geometry.type === 'Polygon') {
         let levels = 1
 
         if (info['building:levels'] !== undefined) {
